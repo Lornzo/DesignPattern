@@ -38,5 +38,5 @@
 * 依據相依反轉原則，我們把所有子pacakge裡面的物件用一層介面包起來，並直接return介面
 * 依據介面分離原則，我們為clientA與clientB分別建立兩個facade的介面，並return facade物件
   * facade物件中提供了兩個不同的方法，把clientA與clientB會用到底層功能給包起來，這樣一來就可以精簡化clientA與clientB的程式碼
-  * Golang語言特性的關系，我們可以用同一固物件來繼承兩個不同的介面
+  * Golang語言特性的關係，我們可以用同一個物件來繼承兩個不同的介面
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Facade/example.png)
