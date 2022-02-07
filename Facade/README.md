@@ -29,3 +29,14 @@
 
 * 如果我們在中間使用一個Facade物件，統一整合後面的功能，在使用上就會顯得簡單一些
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Facade/facade-pattern.png)
+
+## 範例說明
+* 有三個物件「DB」「Model」「Element」分別散佈在它們所屬的package裡面
+* 有兩個function：「clientA」與「clientB」，這兩個function會同時分別使用到「DB」「Model」「Element」裡面的部份功能
+  * clientA 使用到 「DB」「Model」「Element」裡面各自的「MethodA」
+  * clientB 使用到 「DB」「Model」「Element」裡面各自的「MethodB」
+* 依據相依反轉原則，我們把所有子pacakge裡面的物件用一層介面包起來，並直接return介面
+* 依據介面分離原則，我們為clientA與clientB分別建立兩個facade的介面，並return facade物件
+  * facade物件中提供了兩個不同的方法，把clientA與clientB會用到底層功能給包起來，這樣一來就可以精簡化clientA與clientB的程式碼
+  * Golang語言特性的關系，我們可以用同一固物件來繼承兩個不同的介面
+![image](https://github.com/Lornzo/DesignPattern/blob/main/Facade/example.png)
