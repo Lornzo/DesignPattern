@@ -24,7 +24,7 @@
 
 ## Adapter模式 VS Facade模式
 * Facade模式簡化了介面
-* Adapter模式將一個已有的介面轉換成另一個介面
+* Adapter模式將一個已有的介面轉換成另一個介面  
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Adapter/images/compare.png)
 
 ## 範例說明
