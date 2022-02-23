@@ -2,7 +2,8 @@
 定義一系統的演算法，把它們一個個封裝起來，並且使它們可以相互替換。Strategy模式使演算法可以獨立於使用它們的客戶而變化
 
 ## 理解
-
+* 寫好一系列的演算法後，統一用一個介面來封裝。
+* 在使用的場合來帶入不同的算法到使用它的物件
 
 ## 定義
 * 意圖：可以根據所處上下文，使用不同的業務規則或演算法。
@@ -26,7 +27,9 @@
 * 在Context物件的建構式中，將策略物件指派給Strategy模式中的Context，然後任何需要參照策略物件的方法都可以使用了。
 * 如果在Context物件建構時就知道需要哪一個Strategy物件，就可以使用這個變化。
 
-## Adapter模式UML
+## Strategy模式UML
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Strategy/images/pattern.png)
 
 ## 範例說明
+在一個導航系統中，設計一個程式，讓程式能夠根據所選的交通方式來算出導航路徑
+![image](https://github.com/Lornzo/DesignPattern/blob/main/Strategy/images/example.png)
