@@ -23,10 +23,10 @@
 ## 範例說明
 * 辦公室中現在有兩台電腦：Mac 跟 Windows
 * 有兩台印表機：HP跟EPSON
-* 電腦可以使用印表機來印東西，且不限制使用哪一台印表機
+* 電腦可以使用印表機來印東西，且不限制使用哪一台印表機  
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Bridge/images/example1.png)
-* 如果電腦多增加了一台Linux且又增加了一台印表機Canon
+* 如果電腦多增加了一台Linux且又增加了一台印表機Canon  
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Bridge/images/example2.png)
 * 使用不讓程式碼是以3x3的方式增加情況下設計。
-* 這樣一來，不管是電腦增加還是印表機增加都很方便
+* 這樣一來，不管是電腦增加還是印表機增加都很方便  
 ![image](https://github.com/Lornzo/DesignPattern/blob/main/Bridge/images/example3.png)
